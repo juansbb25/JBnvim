@@ -67,3 +67,20 @@ nnoremap <leader>pf :Files<CR>
 inoremap jk <esc>:w<CR> 
 nnoremap <C-p> :GFiles<CR>
 
+
+" open new split panes to right and below 
+set splitright 
+set splitbelow 
+" turn terminal to normal mode with escape 
+tnoremap <Esc> <C-\><C-n> 
+" start terminal in insert mode 
+au BufEnter * if &buftype == 'terminal' | :startinsert | endif 
+" open terminal on ctrl+n 
+function! OpenTerminal() 
+nnoremap <leader>n :NERDTreeFocus<CR>
+	split term://powershell 
+	resize 10 
+endfunction 
+nnoremap <c-n> :call OpenTerminal()<CR> 
+let g:prettier#autoformat_config_present = 1 
+let g:prettier#config#config_precedence = 'prefer-file'
