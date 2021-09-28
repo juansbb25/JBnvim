@@ -1,6 +1,5 @@
-set number
+"set number
 call plug#begin('~/.vim/plugged')
-
 Plug 'samoshkin/vim-mergetool'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -17,14 +16,21 @@ Plug 'SirVer/ultisnips'
 Plug 'mlaursen/vim-react-snippets'
 Plug 'ryanoasis/vim-devicons'
 Plug 'alvan/vim-closetag'
-
+Plug 'haishanh/night-owl.vim'
 call plug#end()
 
-colorscheme onedark
+" If you have vim >=8.0 or Neovim >= 0.1.5
+if(has("termguicolors")) 
+	set termguicolors
+endif
+
+""""" enable the theme
+
+syntax enable
+colorscheme night-owl
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 
-syntax on
 let g:airline_theme='onedark'
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
