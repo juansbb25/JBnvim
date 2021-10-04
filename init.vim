@@ -1,5 +1,8 @@
 set scrolloff=8 
 set number 
+set mouse=a
+set numberwidth=1
+set clipboard=unnamed
 set relativenumber 
 set tabstop=4 
 set shiftwidth=4 
@@ -13,6 +16,7 @@ set ruler
 set cursorline
 set encoding=utf-8
 set showmatch
+set noshowmode
 set termguicolors
 set sw=2
 
@@ -29,5 +33,6 @@ if(has("termguicolors"))
 endif
 """"" enable the theme
 syntax enable
-colorscheme night-owl
+colorscheme onedark
+
 

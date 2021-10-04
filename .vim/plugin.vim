@@ -18,4 +18,6 @@ Plug 'alvan/vim-closetag'
 Plug 'haishanh/night-owl.vim'
 Plug 'junegunn/fzf', {'do': { -> fzf#install() } } 
 Plug 'junegunn/fzf.vim'
+Plug 'easymotion/vim-easymotion'
+"Plug 'itchyny/lightline.vim'
 call plug#end()

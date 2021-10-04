@@ -1,3 +1,4 @@
+let mapleader=" "
 " This is to allow moving with a more flexible way
 :nnoremap j h
 :nnoremap k j
@@ -61,3 +62,8 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+" faster scrolling
+nnoremap <C-k> 10<C-e>
+nnoremap <C-l> 10<C-y>
+nmap <Leader>s <Plug>(easymotion-s2)
