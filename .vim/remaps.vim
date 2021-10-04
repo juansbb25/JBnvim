@@ -50,7 +50,7 @@ function! OpenTerminal()
   endif
 endfunction
 nnoremap <c-n> :call OpenTerminal()<CR> 
-nnoremap <C-e> :NERDTreeToggle<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <leader>pv :Vex<CR> 
 nnoremap <leader>pf :Files<CR> 
 inoremap jk <esc>:w<CR> 
@@ -67,3 +67,7 @@ nmap <silent> gr <Plug>(coc-references)
 nnoremap <C-k> 10<C-e>
 nnoremap <C-l> 10<C-y>
 nmap <Leader>s <Plug>(easymotion-s2)
+
+" buffers
+map <Leader>ob :Buffers<cr>
+nnoremap <leader>q :bp<cr>:bd #<cr>

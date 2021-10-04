@@ -1,9 +1,14 @@
 let g:prettier#autoformat_config_present = 1 
 let g:prettier#config#config_precedence = 'prefer-file'
 
-
-let g:NERDTreeShowHidden = 1 
-let g:NERDTreeMinimalUI = 0 
+"  nerdtree
+let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1
+let NERDTreeAutoDeleteBuffer=1
+let NERDTreeMinimalUI=1
+let NERDTreeDirArrows=1
+let NERDTreeShowLineNumbers=1
+let NERDTreeMapOpenInTab='\t'
 "let g:NERDTreeIgnore = ['node_modules'] 
 let NERDTreeStatusLine='NERDTree' 
 " Automaticaly close nvim if NERDTree is only thing left open 
@@ -41,10 +46,10 @@ endif
 
 " Unicode symbols
 let g:airline_symbols.colnr = ' ㏇:'
-let g:airline_symbols.colnr = '/'
+let g:airline_symbols.colnr = '|'
 let g:airline_symbols.crypt = '🔒'
 let g:airline_symbols.linenr = '☰'
-let g:airline_symbols.linenr = '/'
+let g:airline_symbols.linenr = '|'
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.paste = 'ρ'
