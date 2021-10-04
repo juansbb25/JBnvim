@@ -27,6 +27,13 @@ exec 'source' path . '\AppData\Local\nvim/.vim/plugin-configuration.vim'
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 
+"" Searching
+set hlsearch                    " highlight matches
+set incsearch                   " incremental searching
+set ignorecase                  " searches are case insensitive...
+set smartcase                   " ... unless they contain at least one capital letter
+
+"Apply themes
 " If you have vim >=8.0 or Neovim >= 0.1.5
 if(has("termguicolors")) 
 	set termguicolors
